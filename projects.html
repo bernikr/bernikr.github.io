@@ -1,0 +1,22 @@
+---
+title: Projects
+---
+<ul class="project-list">
+  {% for project in site.data.projects %}
+	<li>
+	  <h2>{{ project.title }}
+		 {% if project.url %} <a href="{{ project.url }}" aria-label="link"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif %}
+		 {% if project.code %} <a href="{{ project.code }}" aria-label="github"> <i class="fa fa-github" aria-hidden="true"></i></a>{% endif %}
+	 </h2>
+	  {{ project.description }}
+
+
+	  {% if project.post %}
+	  	{% assign post_link = project.post | prepend: "_posts/" | append: ".md" %}
+		{% assign post = site.posts | where:"path",post_link %}
+	    <a href="{{post[0].url}}">read more...</a>
+	  {% endif %}
+
+	</li>
+  {% endfor %}
+</ul>
