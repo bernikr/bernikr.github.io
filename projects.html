@@ -5,8 +5,8 @@ title: Projects
   {% for project in site.data.projects %}
 	<li>
 	  <h2>{{ project.title }}
-		 {% if project.url %} <a href="{{ project.url }}" aria-label="link"><i class="fa fa-external-link" aria-hidden="true"></i></a>{% endif %}
-		 {% if project.code %} <a href="{{ project.code }}" aria-label="github"> <i class="fa fa-github" aria-hidden="true"></i></a>{% endif %}
+		 {% if project.url %}{% include icon id="external-link" href=project.url %}{% endif %}
+		 {% if project.code %}{% include icon id="github" href=project.code %}{% endif %}
 	 </h2>
 	  {{ project.description }}
 

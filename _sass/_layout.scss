@@ -40,8 +40,8 @@
 
         @include media-query($on-palm) {
             position: absolute;
-            top: 9px;
-            right: 30px;
+            top: 32px;
+            right: 32px;
             background-color: $background-color;
             border: 1px solid $grey-color-light;
             border-radius: 5px;
@@ -55,15 +55,6 @@
                 line-height: 0;
                 padding-top: 10px;
                 text-align: center;
-
-                > svg {
-                    width: 18px;
-                    height: 15px;
-
-                    path {
-                        fill: $grey-color-dark;
-                    }
-                }
             }
 
             .trigger {
