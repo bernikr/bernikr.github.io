@@ -14,7 +14,7 @@ title: Projects
 	  {% if project.post %}
 	  	{% assign post_link = project.post | prepend: "_posts/" | append: ".md" %}
 		{% assign post = site.posts | where:"path",post_link %}
-	    <a href="{{post[0].url}}">read more...</a>
+	    <a href="{{ post[0].url }}">read more...</a>
 	  {% endif %}
 
 	</li>
