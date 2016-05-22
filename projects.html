@@ -6,17 +6,15 @@ title: Projects
 	<li>
 	  <h2>{{ project.title }}
 		 {% if project.url %}{% include icon id="external-link" href=project.url %}{% endif %}
-		 {% if project.code %}{% include icon id="github" href=project.code %}{% endif %}
-	 </h2>
-	  {{ project.description }}
-
+	  </h2>
+      {% if project.code %}<a href="{{ project.code }}">{% include icon id="github" %} Github</a>{% endif %}
+	  {% if project.description %}{{ project.description | markdownify }}{% endif %}
 
 	  {% if project.post %}
 	  	{% assign post_link = project.post | prepend: "_posts/" | append: ".md" %}
 		{% assign post = site.posts | where:"path",post_link %}
 	    <a href="{{ post[0].url }}">read more...</a>
 	  {% endif %}
-
 	</li>
   {% endfor %}
 </ul>
