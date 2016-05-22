@@ -1,3 +1,9 @@
+- title:    Tichu Counter
+  url:      https://bernikr.github.io/tichu-counter/
+  code:     https://github.com/bernikr/tichu-counter
+  description: >
+    A small tool to count points in the card game [Tichu](https://en.wikipedia.org/wiki/Tichu)
+
 - title:    Windmill
   url:      https://bernikr.github.io/windmill/
   code:     https://github.com/bernikr/windmill
