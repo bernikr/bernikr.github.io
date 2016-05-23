@@ -7,7 +7,7 @@ title: Projects
 	  <h2>{{ project.title }}
 		 {% if project.url %}{% include icon id="external-link" href=project.url %}{% endif %}
 	  </h2>
-      {% if project.code %}<a href="{{ project.code }}">{% include icon id="github" %} Github</a>{% endif %}
+      {% if project.repo %}<a href="https://github.com/{{ project.repo }}">{% include icon id="github" %} Github</a>{% endif %}
 	  {% if project.description %}{{ project.description | markdownify }}{% endif %}
 
 	  {% if project.post %}

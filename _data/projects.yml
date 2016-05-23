@@ -1,25 +1,25 @@
 - title:    Tichu Counter
   url:      https://bernikr.github.io/tichu-counter/
-  code:     https://github.com/bernikr/tichu-counter
+  repo:     bernikr/tichu-counter
   description: >
     A small tool to count points in the card game [Tichu](https://en.wikipedia.org/wiki/Tichu)
 
 - title:    Windmill
   url:      https://bernikr.github.io/windmill/
-  code:     https://github.com/bernikr/windmill
+  repo:     bernikr/windmill
 
 - title:    eeeeeeee
   url:      https://bernikr.github.io/eeeeeeee/
-  code:     https://github.com/bernikr/eeeeeeee
+  repo:     bernikr/eeeeeeee
 
 - title:    NerdBot
-  code:     https://github.com/bernikr/NerdBot
+  repo:     bernikr/NerdBot
 
 - title:    UWahn
-  code:     https://github.com/bernikr/UWahn
+  repo:     bernikr/UWahn
 
 - title:    DSLRControl
-  code:     https://github.com/bernikr/dslrcontrol
+  repo:     bernikr/dslrcontrol
 
 - title:    Tesseract
-  code:     https://github.com/bernikr/tesseract
+  repo:     bernikr/tesseract
