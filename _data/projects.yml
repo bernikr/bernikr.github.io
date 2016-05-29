@@ -3,6 +3,7 @@
   repo:     bernikr/tichu-counter
   description: >
     A small tool to count points in the card game [Tichu](https://en.wikipedia.org/wiki/Tichu)
+  post: 2016-05-29-tichu-counter
 
 - title:    Windmill
   url:      https://bernikr.github.io/windmill/
