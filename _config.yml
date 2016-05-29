@@ -1,7 +1,7 @@
 # Site settings
 title: bernikr.github.io
 description: A small blog with random stuff I do
-permalink: /:title
+permalink: /b/:title
 github_username: bernikr
 
 # Build settings
