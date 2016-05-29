@@ -1,0 +1,22 @@
+{
+	"plugins": {
+		"lint": {
+			"checkbox-character-style": {
+				"checked": "x",
+				"unchecked": " "
+			},
+			"code-block-style": "fenced",
+			"emphasis-marker": "*",
+			"fenced-code-marker": "`",
+			"first-heading-level": 2,
+			"heading-style": "atx",
+			"list-item-indent": "mixed",
+			"link-title-style": "'",
+			"maximum-line-length": 81,
+			"ordered-list-marker-style": ".",
+			"rule-style": "* * *",
+			"strong-marker": "*",
+			"unordered-list-marker-style": "*"
+		}
+	}
+}
