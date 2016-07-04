@@ -2,7 +2,8 @@
 title: bernikr.github.io
 description: A small blog with random stuff I do
 permalink: /b/:title
-github_username: bernikr
+social:
+    github: bernikr
 
 # Build settings
 markdown: kramdown
