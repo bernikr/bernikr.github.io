@@ -23,4 +23,8 @@
   repo:     bernikr/dslrcontrol
 
 - title:    Tesseract
+  url:      https://bernikr.github.io/tesseract/
   repo:     bernikr/tesseract
+  description: >
+    A small visualization of a 4D-Hypercube (tesseract) I wrote back in
+    highschool
