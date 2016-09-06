@@ -8,11 +8,11 @@ naturally, after the game was over, I started working on one.
 
 The basic requirements were the following:
 
-1. Allow the tracking of points over several rounds compliant with Tichu rules
-2. Be easy to use
-3. Work on Android and iOS
-4. Work offline
-5. (Should not take to much time to program)
+1.  Allow the tracking of points over several rounds compliant with Tichu rules
+2.  Be easy to use
+3.  Work on Android and iOS
+4.  Work offline
+5.  (Should not take to much time to program)
 
 ## Choosing the Right Tools
 
