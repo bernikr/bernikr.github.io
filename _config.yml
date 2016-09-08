@@ -1,5 +1,6 @@
 # Site settings
 title: bernikr.github.io
+url: https://bernikr.github.io
 description: A small blog with random stuff I do
 permalink: /b/:title
 social:
@@ -25,6 +26,7 @@ defaults:
             type: "posts"
         values:
             layout: post
+            comments: true
     -
         scope:
             path: ""
