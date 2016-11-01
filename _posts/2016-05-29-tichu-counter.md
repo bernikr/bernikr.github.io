@@ -25,10 +25,7 @@ built-in compilers for SCSS and CoffeeScript, which are often more comfortable
 to write. In order to use the latter, however, it is necessary to include a
 `_config.yml` file with the following content to load the CoffeeScript-Plugin:
 
-```yml
-gems:
-    - jekyll-coffeescript
-```
+{% gist bernikr/97bbe90ef4f1854b5dbf7e2e2a7775eb _config.yml %}
 
 SCSS, on the other hand, is supported natively by Jekyll and doesn't need a
 plugin. The only thing left to do is prefacing the SCSS and CoffeeScript files
@@ -72,28 +69,7 @@ directly to the project.
 
 Then I added the following to the manifest to create it dynamically with Jekyll:
 
-```liquid
-{% raw %}
----
-# Empty front matter so that the file will be processed
----
-CACHE MANIFEST                         # First line of the manifest
-# {{ site.time | date_to_xmlschema }}  # Add a comment with the time the site
-                                       # was last compiled, in order to check
-                                       # for changes after the site is modified
-
-CACHE:                                 # The following files will be cached
-
-{% for file in site.static_files %}    # Loop over all static files
-.{{ file.path }}{% endfor %}           # and print their path
-
-{% for file in site.pages %}           # Loop over all generated files
-.{{ file.url }}{% endfor %}            # and print their path
-
-NETWORK:                               # Allow any other used resource to be
-*                                      # loaded from the web
-{% endraw %}
-```
+{% gist bernikr/97bbe90ef4f1854b5dbf7e2e2a7775eb manifest.appcache %}
 
 The last two lines are only needed for Google Analytics to work if the user is
 online, as everything else is cached.
