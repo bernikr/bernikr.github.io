@@ -12,7 +12,7 @@
 			"heading-style": "atx",
 			"list-item-indent": "mixed",
 			"link-title-style": "'",
-			"maximum-line-length": 81,
+			"maximum-line-length": 80,
 			"ordered-list-marker-style": ".",
 			"rule-style": "* * *",
 			"strong-marker": "*",
