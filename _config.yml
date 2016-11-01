@@ -31,3 +31,8 @@ defaults:
       type: "pages"
     values:
       layout: page
+  # This fixes an Invalid-Date-bug when using drafts
+  - scope:
+      path: "_drafts"
+    values:
+      sitemap: false
