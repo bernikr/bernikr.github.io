@@ -4,32 +4,30 @@ url: https://bernikr.github.io
 description: A small blog with random stuff I do
 permalink: /b/:title
 social:
-    github: bernikr
+  github: bernikr
 
 # Build settings
 markdown: kramdown
 future: true
 
 sass:
-    style: compressed
+  style: compressed
 
 gems:
-    - jekyll-feed
-    - jekyll-sitemap
-    - jekyll-seo-tag
-    - jekyll-coffeescript
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-coffeescript
 
 defaults:
-    -
-        scope:
-            path: ""
-            type: "posts"
-        values:
-            layout: post
-            comments: true
-    -
-        scope:
-            path: ""
-            type: "pages"
-        values:
-            layout: page
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      comments: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: page
