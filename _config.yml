@@ -18,6 +18,10 @@ gems:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-coffeescript
+  - jekyll-gist
+  - jekyll-redirect-from
+  - jekyll-mentions
+  - jemoji
 
 defaults:
   - scope:
