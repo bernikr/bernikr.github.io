@@ -19,7 +19,11 @@ In order to archive the requirements 3 and 5 I choose html/css/js to build the a
 This might not be the best choice to build smartphone apps that should run offline, but it is possible and my go-to way for quickly building anything.
 
 As I am using [GitHub Pages][] to publish the app/website I can use [Jekyll][]'s built-in compilers for SCSS and CoffeeScript, which are often more comfortable to write.
-In order to use the latter, however, it is necessary to include a `_config.yml` file with the following content to load the CoffeeScript-Plugin:
+In order to use the latter, however, it is necessary to include a `_config.yml` file with the following content to load the CoffeeScript-Plugin:[^1]
+
+[^1]:
+	I learned later that this config file is not needed in order for GitHub Pages to compile CoffeeScript.
+	You need it, however, if you want to use Jekyll to compile the file on your local machine.
 
 {% gist bernikr/97bbe90ef4f1854b5dbf7e2e2a7775eb _config.yml %}
 
