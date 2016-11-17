@@ -60,8 +60,7 @@ That meant downloading jQuery, MaterializeCSS and the Google Icon fonts and addi
 
 Then I added the following to the manifest to create it dynamically with Jekyll:
 
-```liquid
-{% raw %}
+```liquid{% raw %}
 ---
 # Empty front matter so that the file will be processed
 ---
@@ -80,8 +79,7 @@ CACHE:                                 # The following files will be cached
 
 NETWORK:                               # Allow any other used resource to be
 *                                      # loaded from the web
-{% endraw %}
-```
+{% endraw %}```
 
 The last two lines are only needed for Google Analytics to work if the user is online, as everything else is cached.
 
