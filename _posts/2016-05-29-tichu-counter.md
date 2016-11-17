@@ -25,7 +25,10 @@ In order to use the latter, however, it is necessary to include a `_config.yml` 
 	I learned later that this config file is not needed in order for GitHub Pages to compile CoffeeScript.
 	You need it, however, if you want to use Jekyll to compile the file on your local machine.
 
-{% gist bernikr/97bbe90ef4f1854b5dbf7e2e2a7775eb _config.yml %}
+```yml
+gems:
+    - jekyll-coffeescript
+```
 
 SCSS, on the other hand, is supported natively by Jekyll and doesn't need a plugin.
 The only thing left to do is prefacing the SCSS and CoffeeScript files with a an empty YAML front matter consisting of two lines of three dashes (`---`) in order for Jekyll to process the file.
@@ -57,7 +60,28 @@ That meant downloading jQuery, MaterializeCSS and the Google Icon fonts and addi
 
 Then I added the following to the manifest to create it dynamically with Jekyll:
 
-{% gist bernikr/97bbe90ef4f1854b5dbf7e2e2a7775eb manifest.appcache %}
+```liquid
+{% raw %}
+---
+# Empty front matter so that the file will be processed
+---
+CACHE MANIFEST                         # First line of the manifest
+# {{ site.time | date_to_xmlschema }}  # Add a comment with the time the site
+                                       # was last compiled, in order to check
+                                       # for changes after the site is modified
+
+CACHE:                                 # The following files will be cached
+
+{% for file in site.static_files %}    # Loop over all static files
+.{{ file.path }}{% endfor %}           # and print their path
+
+{% for file in site.pages %}           # Loop over all generated files
+.{{ file.url }}{% endfor %}            # and print their path
+
+NETWORK:                               # Allow any other used resource to be
+*                                      # loaded from the web
+{% endraw %}
+```
 
 The last two lines are only needed for Google Analytics to work if the user is online, as everything else is cached.
 
