@@ -1,6 +1,4 @@
-/**
- * Reset some basic elements
- */
+// Reset some basic elements
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -8,11 +6,7 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
-/**
- * Basic styling
- */
+// Basic styling
 body {
     font-family: $base-font-family;
     font-size: $base-font-size;
@@ -23,11 +17,7 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
+// Set `margin-bottom` to maintain vertical rhythm
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
@@ -38,56 +28,15 @@ ul, ol, dl, figure,
 
 
 /**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
-}
+* Element styling
+*/
 
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
-}
-
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
-
-
-
-/**
- * Headings
- */
+// Headings
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
-
-
-/**
- * Links
- */
+// Links
 a {
     color: $brand-color;
     text-decoration: none;
@@ -103,10 +52,37 @@ a {
 }
 
 
+// Images
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
 
-/**
- * Blockquotes
- */
+// Figures
+figure {
+    > img {
+        display: block;
+    }
+
+    figcaption {
+        font-size: $small-font-size;
+    }
+}
+
+// Lists
+ul, ol {
+    margin-left: $spacing-unit;
+
+    // Nested lists
+    li {
+        > ul,
+        > ol {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// Blockquotes
 blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
@@ -120,12 +96,27 @@ blockquote {
     }
 }
 
+// Icons
+.icon {
+    display: inline-block;
+	fill: currentColor;
+	width: 0.8em;
+	height: 0.8em;
+}
+
+// Math
+html.no-js script[type="math/tex"] {
+    display: inline;
+}
+
 
 
 /**
- * Wrapper
- */
-.wrapper {
+* H
+*/
+
+// Wrapper
+%wrapper {
     max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
     max-width:         calc(800px - (#{$spacing-unit} * 2));
     margin-right: auto;
@@ -134,7 +125,7 @@ blockquote {
     padding-left: $spacing-unit;
     @extend %clearfix;
 
-    @include media-query($on-laptop) {
+    @include media-query($on-tablet) {
         max-width: -webkit-calc(800px - (#{$spacing-unit}));
         max-width:         calc(800px - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
@@ -142,37 +133,11 @@ blockquote {
     }
 }
 
-
-
-/**
- * Clearfix
- */
+// Clearfix
 %clearfix {
-
     &:after {
         content: "";
         display: table;
         clear: both;
     }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-    display: inline-block;
-	fill: currentColor;
-	width: 0.8em;
-	height: 0.8em;
-}
-
-
-
-/**
- * Math
- */
-html.no-js script[type="math/tex"] {
-    display: inline;
 }
