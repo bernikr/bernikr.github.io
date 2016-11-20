@@ -3,6 +3,7 @@
   repo:     bernikr/L64
   description: >
     An implementation of my L64 coordinate system
+  post: 2016-11-20-L64
 
 - title:    Tichu Counter
   url:      https://bernikr.github.io/tichu-counter/
