@@ -167,3 +167,12 @@ blockquote {
 	width: 0.8em;
 	height: 0.8em;
 }
+
+
+
+/**
+ * Math
+ */
+html.no-js script[type="math/tex"] {
+    display: inline;
+}
