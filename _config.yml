@@ -126,19 +126,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
-  - jekyll-coffeescript
-
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-  - jekyll-coffeescript
-
-gems: [jekyll-coffeescript]
+  
 
 # HTML Compression
 # - http://jch.penibelst.de/
