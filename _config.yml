@@ -1,41 +1,163 @@
-# Site settings
-title: bernikr.github.io
-url: https://bernikr.github.io
-description: A small blog with random stuff I do
-permalink: /b/:title
-social:
-  github: bernikr
+# Theme
+remote_theme           : "mmistakes/minimal-mistakes@4.14.2"
+minimal_mistakes_skin    : "default"
 
-# Build settings
+# Site Settings
+locale                   : "en-US"
+title                    : "bernikr.github.io"
+title_separator          : "|"
+name                     : "Bernhard Kralofsky"
+description              : "A small blog with random stuff I do"
+url                      : "https://bernikr.github.io"
+repository               : "bernikr/bernikr.github.io"
+
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+words_per_minute         : 200
+
+head_scripts:
+  # MathJax for LaTeX rendering
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML
+
+# Comments
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light"
+
+
+# Site Author
+author:
+  name             : "Bernhard Kralofsky"
+  avatar           : https://www.gravatar.com/avatar/d99c19fc6ca8ad417dd9f7d44da46f30.jpg?s=300&d=mp
+  bio              : "Just a CS & Econ Student doing stuff in his free time."
+  email            :
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/bernikr"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/bernikr_"
+
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/bernikr"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/bernikr_"
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - .idea
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gemfile.lock
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
 markdown: kramdown
-future: true
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# Sass/SCSS
 sass:
-  style: compressed
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-gems:
-  - jekyll-feed
+
+# Outputting
+permalink: /b/:title
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-coffeescript
-  - jekyll-redirect-from
-  - jekyll-mentions
+  - jekyll-gist
+  - jekyll-feed
   - jemoji
+  - jekyll-include-cache
+  - jekyll-coffeescript
 
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-coffeescript
+
+gems: [jekyll-coffeescript]
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+
+# Defaults
 defaults:
+  # _posts
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: post
+      layout: single
+      author_profile: true
+      read_time: true
       comments: true
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: page
-  # This fixes an Invalid-Date-bug when using drafts
-  - scope:
-      path: "_drafts"
-    values:
-      sitemap: false
+      share: true
+      related: true

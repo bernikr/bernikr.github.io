@@ -1,13 +1,22 @@
 ---
 title: Projects
+layout: single
 ---
+
 <ul id="project-list">
   {% for project in site.data.projects %}
 	<li>
-	  <h2>{{ project.title }}
-		 {% if project.url %}{% include icon id="external-link" href=project.url %}{% endif %}
+	  <h2>
+      {% if project.url %}
+        <a href="{{ project.url }}">{{ project.title }} <i class="fas fa-external-link-alt"></i></a>
+      {% else %}
+        {{ project.title }}
+      {% endif %}
+      {% if project.repo %}
+        <a href="https://github.com/{{ project.repo }}"><i class="fab fa-github"></i></a>
+      {% endif %}
 	  </h2>
-      {% if project.repo %}<a href="https://github.com/{{ project.repo }}">{% include icon id="github" %} Github</a>{% endif %}
+
 	  {% if project.description %}{{ project.description | markdownify }}{% endif %}
 
 	  {% if project.post %}

@@ -1,6 +1,0 @@
-{% if include.href %}
-	<a href="{{ include.href | absolute_url }}">
-{% endif %}
-<svg class="icon i-{{ include.id }}" viewBox="0 0 32 32">
-	<use xlink:href="#icon-{{ include.id }}"/>
-</svg>{% if include.href %}</a>{% endif %}

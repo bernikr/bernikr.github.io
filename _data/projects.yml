@@ -23,10 +23,8 @@
   repo:     bernikr/windmill
 
 - title:    eeeeeeee
-  url:      /miniprojects/eeeeeeee/
-
-- title:    NerdBot
-  repo:     bernikr/NerdBot
+  url:      https://bernikr.github.io/eeeeeeee/
+  repo:     bernikr/eeeeeeee
 
 - title:    UWahn
   repo:     bernikr/UWahn
