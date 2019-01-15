@@ -20,9 +20,10 @@ head_scripts:
 
 # Comments
 comments:
-  provider: "utterances"
-  utterances:
-    theme: "github-light"
+  provider  : "staticman_v2"
+staticman:
+  branch    : "master"
+  endpoint  : "https://dev.staticman.net/v3/entry/github/"
 
 
 # Site Author
