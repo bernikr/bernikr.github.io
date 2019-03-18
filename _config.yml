@@ -4,11 +4,11 @@ minimal_mistakes_skin    : "default"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "bernikr.github.io"
+title                    : "bernhard.kralofsky.com"
 title_separator          : "|"
 name                     : "Bernhard Kralofsky"
 description              : "A small blog with random stuff I do"
-url                      : "https://bernikr.github.io"
+url                      : "https://bernhard.kralofsky.com"
 repository               : "bernikr/bernikr.github.io"
 
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
