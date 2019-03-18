@@ -5,25 +5,25 @@
     A map for the Vienna Citybike Network
 
 - title:    L64
-  url:      https://bernikr.github.io/L64/
+  url:      https://bernhard.kralofsky.com/L64/
   repo:     bernikr/L64
   description: >
     An implementation of my L64 coordinate system
   post: 2016-11-20-L64
 
 - title:    Tichu Counter
-  url:      https://bernikr.github.io/tichu-counter/
+  url:      https://bernhard.kralofsky.com/tichu-counter/
   repo:     bernikr/tichu-counter
   description: >
     A small tool to count points in the card game [Tichu](https://en.wikipedia.org/wiki/Tichu)
   post: 2016-05-29-tichu-counter
 
 - title:    Windmill
-  url:      https://bernikr.github.io/windmill/
+  url:      https://bernhard.kralofsky.com/windmill/
   repo:     bernikr/windmill
 
 - title:    eeeeeeee
-  url:      https://bernikr.github.io/eeeeeeee/
+  url:      https://bernhard.kralofsky.com/eeeeeeee/
   repo:     bernikr/eeeeeeee
 
 - title:    UWahn
@@ -33,7 +33,7 @@
   repo:     bernikr/dslrcontrol
 
 - title:    Tesseract
-  url:      https://bernikr.github.io/tesseract/
+  url:      https://bernhard.kralofsky.com/tesseract/
   repo:     bernikr/tesseract
   description: >
     A small visualization of a 4D-Hypercube (tesseract) I wrote back in
