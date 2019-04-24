@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/bernikr
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://bernhard.kralofsky.com
+  * I am bernikr (https://keybase.io/bernikr) on keybase.
+  * I have a public key with fingerprint 0B74 9E71 F3DB 7DEA A72D  CDD4 11FE 2589 F41B A48E
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012021041ee98b02a9c65072c067de893b75b42c316f2fc3ef859d7e460666633f130a",
+      "fingerprint": "0b749e71f3db7deaa72dcdd411fe2589f41ba48e",
+      "host": "keybase.io",
+      "key_id": "11fe2589f41ba48e",
+      "kid": "010180d027e9b074ea039f338ebc7343d0a10f6fec68cfb43487e4d6ee9517a160ec0a",
+      "uid": "644277cc8a753002d9de36b351671b19",
+      "username": "bernikr"
+    },
+    "service": {
+      "hostname": "bernhard.kralofsky.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1556117433,
+  "expire_in": 157680000,
+  "prev": "0c42b12ce13de5d8a42fd5313d52639ee6eae803795859c8ee0f383d46e65e41",
+  "seqno": 20,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMN3AnicbZJ9TFV1GMe5IDZRFkS0CNzkOAaNK57feT93kAW6KCQJs25AXM7L78AJ
+uAfPuUCASr6EyBDGW4o5J4VuxK4QUkppvF2oIKA06W4yX7DJRB2DWiAO7ByWW3/0
+/PN72ff5/L7P83tcvl4ePib/5bAjfwU3V5mGe5vyPdJ6CrtKEF4RixBLCZINVxaY
+I0LNYcuWRcSCoABDMYASAEKW4VGMYwWKRGlMQClahAyL8zTJE5iAA0rCJAGHEkOy
+Ig0JCqX0wHEJ4CiHmBFJtmdCNU+V7Q4Dy9MEC2kg4SKvcziOxkRBFAkAJIiRDCsR
+gOcIBuqJWYpmZOjmeE6DUbKi3+kH24q9/9E/9Y0CBhVRjIYsj9IE5FCclXCcgbxA
+4wQuohxAJUqCAsUIEk/gBKObFim9TBLQHKBQKKz4zl/BUQSB0bQgMBxN4iiKiawI
+cYrHSUDRgAesIdSgaudyoa7m9Z2crSJ7zYh+WSAL0OirUch/BFmcKkZlq1yOImnZ
+RVGCkqtD8lTFoQhKjq7JcjjyNIvBcBTlGUmFkLf9i7Pxsl3UG6pnFEBVkxU7YgG6
+UnDIBh+QJAUATeC4GYEf5ckqtMmGgqQpBtXDeAcWGF0SCIwHmAABLkJSZDgCk0QS
+108kRuEshBTkIIPiNEvq3yowEKISzuAiQUGKhARAjAJ32xXEgulQB5epMzU50845
+8lWI7O3rTVvlYfLxWO3taUyah88av6fzt5z+7KLnL8esqe5bj+oL93hOgNDzythq
+/6+zjv/MV5xj0rlfQ65Getnzq5cjdyYN3dh+ZSj5mdZZV0eY+04lS5q6Wrqsqzqr
+g9OSs8pGv809lhDUUnMxnHIemJxWM7wD7Kacy4kLrduSPZ8faW+LEMqwxpmTKVa0
+g4uubppLK5Kc68gB39aYLbvXv/B3Xci2wqyT+x6fCR6PzxwMaHO1HaouSyhdMrvi
+YwvXfNa8YVPirm8q6q7fe3Eiwf2koaxkIKh21+hz5erNcyWNoS71SGG/pe3dw9pv
+Lev3nZrdmnq24yHxRWAJdj62s+OllqM7Tny69d7RmaqY2mznLO8TWv4d7fArbr62
+ZUwpV9zeX26+2I+dirsAo84WN7gj7gzPxYyF2OngtqALXPPn2lJKx8ylD/1f3V45
+HE89Lu8xu/5Yiv3kyZ7rd5PGT59ot3bX3H0j7uD+Q4/C+udnHr78/lDQyKKpb3Jt
+vXd79By8vZnpDmhY7L6/03GzZyKw3GNHZGkON3pp48hU0dpp0OW0DcZNI34P6KnD
+bPrxQdufecULiQcWcg++yV7zXcdEj2jJk04sKnbWy+eD5RrveWvK21ciws3u+1rp
+e321N05XvZL0VurGph9/SnptA7WptGE8IyLtltz7/TvhxfNnOr+q3O9y/h7obLxt
+nbpKZ9R/fHmk4vUHAw1Oyw+RdSbtH8Odyfk=
+=j5pM
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bernikr
+
+==================================================================
