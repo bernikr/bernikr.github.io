@@ -4,11 +4,11 @@ minimal_mistakes_skin    : "default"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "bernhard.kralofsky.com"
+title                    : "blog.berni.kr"
 title_separator          : "|"
-name                     : "Bernhard Kralofsky"
+name                     : "Bernadette Kralofsky"
 description              : "A small blog with random stuff I do"
-url                      : "https://bernhard.kralofsky.com"
+url                      : "https://blog.berni.kr"
 repository               : "bernikr/bernikr.github.io"
 
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -20,9 +20,9 @@ head_scripts:
 
 # Site Author
 author:
-  name             : "Bernhard Kralofsky"
+  name             : "Bernadette Kralofsky"
   avatar           : https://www.gravatar.com/avatar/d99c19fc6ca8ad417dd9f7d44da46f30.jpg?s=300&d=mp
-  bio              : "Just a CS & Econ Student doing stuff in his free time."
+  bio              : "Just a CS & Econ Student doing stuff in her free time."
   email            :
   links:
     - label: "GitHub"
